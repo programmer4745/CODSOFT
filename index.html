@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> task 1 landing page </title>
+        <style type="text/css">
+            *{padding: 0;margin: 0;box-sizing: border-box;}
+            header{
+                width: 100%;
+                height: 100vh;
+                background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url('bg1.jpg');
+                background-size: cover;
+                font-family: sans-serif;
+            }
+            nav{
+                width: 100%;
+                height: 100px;
+                
+                color: white;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+            }
+            .logo{
+                font-size: 2em;
+                letter-spacing: 2px;
+
+            }
+            .menu a{
+                text-decoration: none;
+                color: white;
+                padding: 10px 20px;
+                font-size: 20px;
+
+            }
+            .menu a:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0%;
+                height: 100%;
+                
+                border-bottom: 2px solid indianred; 
+                transform: 0.4 linear;
+            }
+            .menu  a:hover:before{
+                width:90%;
+
+            }
+            .register a{
+                text-decoration: none;
+                color: white;
+                padding: 10px 20px;
+                font-size: 20px;
+                background: indianred;
+                border-radius: 8px;
+            }
+            .h-txt{
+                max-width: 650px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                text-align: center;
+                color: white;
+
+            }
+            .h-txt span{
+                letter-spacing: 5px;
+                 
+            }
+            .h-txt h1{
+                font-size: 3.5em;
+
+            }
+            .h-txt a{
+                text-decoration: none;
+                background: indianred;
+                color: white;
+                padding: 10px 20px;
+                letter-spacing: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo"> SD WEB</div>
+                <div class="menu">
+                    <a href="#"> Home</a>
+                    <a href="#"> About  </a>
+                    <a href="#"> Language  </a>
+                    <a href="#"> Projects </a>
+                    <a href="#"> Contact </a>
+
+                </div>
+                <div class="register">
+                    <a href="#">login </a>
+
+                </div>
+            </nav>
+            <section class ="h-txt"> 
+                
+                <span>  A passionate programmer  </span>
+                <h1> Coding Through My Ways</h1>
+                <br>
+                <a href="#"> We will create your dream website   </a>
+            </section>
+        </header>
+    </body>
